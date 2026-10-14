@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Óleo de Pedra</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div id="erros" class="erros" hidden></div>
+
+  <div id="dica" class="dica" hidden></div>
+
+  <div id="jogo" hidden>
+    <header id="cabecalho"></header>
+    <div class="colunas">
+      <aside id="recursos" class="quadro"></aside>
+      <main class="quadro">
+        <div id="decisoes"></div>
+        <nav id="abas"></nav>
+        <div id="painel"></div>
+      </main>
+      <aside id="diario" class="quadro"></aside>
+    </div>
+  </div>
+
+  <script>var JOGO = {};</script>
+
+  <!-- DADOS: é aqui que o jogo é escrito. -->
+  <script src="dados/config.js"></script>
+  <script src="dados/recursos.js"></script>
+  <script src="dados/acoes.js"></script>
+  <script src="dados/construcoes.js"></script>
+  <script src="dados/tecnologias.js"></script>
+  <script src="dados/eventos.js"></script>
+  <script src="dados/rivais.js"></script>
+  <script src="dados/medidores.js"></script>
+
+  <!-- MOTOR: faz as contas e desenha a tela. -->
+  <script src="motor/validar.js"></script>
+  <script src="motor/nucleo.js"></script>
+  <script src="motor/tela.js"></script>
+</body>
+</html>
